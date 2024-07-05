@@ -5,4 +5,4 @@ greet_user('Abid')
 def make_shirt(size, text):
     print("The size of the shirt is: " + size + " and there will be written: " + text.title() + " on the frontal side.")
 
-make_shirt('42', 'Fuck You slut!')
+make_shirt('42', 'Meta')
