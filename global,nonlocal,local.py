@@ -29,6 +29,14 @@ When the innermost function returns, its local variables are discarded, and the 
 nonlocal keyword in the inner function allows it to modify the x variable in the outer function's scope. When the inner function assigns x = 30, it modifies the x variable in the outer function's scope, so when the outer function prints its x variable, it prints 30
 '''
 
+"""
+Innermost: 40: This is printed by the innermost function, which has its own local x set to 40.
+Inner: 30: This is printed by the inner function, where x is the nonlocal variable referring to the x in outer, which was set to 30.
+Outer: 30: This is printed by the outer function, where x was set to 30 by the inner function.
+Global: 10: This is printed outside of any function, showing the global x, which remains unchanged at 10.
+"""
+
+
 def outer_function():
     x = "outer"
     def inner_function():

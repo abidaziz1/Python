@@ -24,3 +24,29 @@ def func1():
     func2()
     return x
 print(func1())
+
+
+# Global variable
+count = 0
+
+def increment():
+    global count  # Declare the variable as global
+    count += 1    # Modify the global variable
+
+def display_count():
+    print(f"The current count is {count}")
+
+# Before calling the function
+print("Before incrementing:")
+display_count() #0
+
+# Call the increment function
+increment()
+
+# After calling the function
+print("After incrementing:")
+display_count() #1
+
+'''
+Inside the increment function, the global keyword is used to tell Python that we are referring to the global count variable, not a local one.The line count += 1 increments the global count variable by 1.
+'''

@@ -9,7 +9,7 @@ while active:
         print(message)
 
 
-unconfirmed_users = ['alice', 'bob', 'brandi-love']
+unconfirmed_users = ['alice', 'bob', 'Jane']
 confirmed_users = []
 while unconfirmed_users:
     curr_users = unconfirmed_users.pop()
